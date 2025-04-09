@@ -48,6 +48,10 @@ const createCard = ({target}) => {
 
     target.append(card);
     card.focus()
+
+    card.addEventListener("dblclick", () =>{
+        card.remove();
+    })
 }
 
 columns.forEach((column) => {
